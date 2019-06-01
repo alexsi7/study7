@@ -1,14 +1,18 @@
 .down-arrow {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  background: red;
+  background: #fff;
 }
 
 .down-arrow__icon {
   color: yellow;
+  left: 50%;
+  width: 28px;
+  height: 14px;
 }
+
