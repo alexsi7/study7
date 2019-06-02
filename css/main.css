@@ -139,7 +139,9 @@ ul { padding: 0; margin: 0; }
 
 ul > li { list-style: none; }
 
-p { padding: 0; margin: 0; }
+p { font-family: 'Ubuntu', Helvetica, sans-serif; font-weight: 300; padding: 0; margin: 0; }
+
+h3 { font-family: 'Lifehack-Medium'; font-size: 24px; font-weight: 500; margin-bottom: 10px; }
 
 footer { position: relative; width: 100%; }
 
@@ -181,9 +183,9 @@ img { max-width: 100%; }
 
 .section-title--centered { text-align: center; }
 
-.down-arrow { display: block; width: 50px; height: 50px; position: absolute; bottom: 40px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); background: #fff; }
+.down-arrow { display: block; width: 50px; height: 50px; position: absolute; bottom: 40px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
-.down-arrow__icon { color: yellow; left: 50%; width: 28px; height: 14px; }
+.down-arrow__icon { fill: #fff; left: 50%; width: 28px; height: 14px; }
 
 .best { background: url("../img/best/bg.png") center center/cover no-repeat; }
 
@@ -260,3 +262,9 @@ img { max-width: 100%; }
 .team-acco__title { font-family: 'Ubuntu', Helvetica, sans-serif; font-weight: bold; font-size: 0.875rem; color: #fff; margin-bottom: 0.875rem; }
 
 .team-acco__text-content { font-family: 'Ubuntu', Helvetica, sans-serif; font-weight: 300; color: #fff; font-size: 0.875rem; }
+
+.feature__desc { text-align: center; }
+
+.feature__pic { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 10px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.feature__text { font-size: 14px; }
