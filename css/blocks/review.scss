@@ -28,3 +28,12 @@
   opacity: 0;
   transition: opacity .3s;
 }
+
+.review__text {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.review__title {
+  @include gagalin();
+}

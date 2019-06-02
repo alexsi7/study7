@@ -4,10 +4,21 @@ $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
 
+// resolutions
+
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
 //normalize
 @import "./_misc/normalize.scss";
 
+// media
+@import "_misc/media";
+
 // setups
+@import "_misc/mixins";
 @import "_misc/fonts";
 @import "_misc/layout";
 
@@ -21,5 +32,8 @@ $red: #e35028;
 @import "blocks/best.scss";
 @import "blocks/reviews.scss";
 @import "blocks/review.scss";
+@import "blocks/team.scss";
+@import "blocks/team-acco.scss";
+@import "blocks/feature.scss";
 
 
