@@ -33,3 +33,7 @@
   line-height: 24px;
   margin-bottom: 20px;
 }
+
+.review__title {
+  @include gagalin();
+}

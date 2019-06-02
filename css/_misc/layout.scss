@@ -67,12 +67,6 @@ p {
   
 }
 
-h3 {
-  @include lifehack();
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
 
 footer {
   position: relative;

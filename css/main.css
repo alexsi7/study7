@@ -139,9 +139,7 @@ ul { padding: 0; margin: 0; }
 
 ul > li { list-style: none; }
 
-p { font-family: 'Ubuntu', Helvetica, sans-serif; font-weight: 300; padding: 0; margin: 0; }
-
-h3 { font-family: 'Lifehack-Medium'; font-size: 24px; font-weight: 500; margin-bottom: 10px; }
+p { padding: 0; margin: 0; }
 
 footer { position: relative; width: 100%; }
 
@@ -209,6 +207,8 @@ img { max-width: 100%; }
 
 .review__text { line-height: 24px; margin-bottom: 20px; }
 
+.review__title { font-family: 'Gagalin-Regular', Helvetica, sans-serif; }
+
 .team { background: url("../img/team/team-bg.png") 50% no-repeat; background-size: cover; position: relative; }
 
 .team .section__title { margin-bottom: 12%; }
@@ -266,5 +266,7 @@ img { max-width: 100%; }
 .feature__desc { text-align: center; }
 
 .feature__pic { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 10px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.feature__desc h3 { font-family: 'Lifehack-Medium'; font-size: 24px; font-weight: 500; margin-bottom: 10px; }
 
 .feature__text { font-size: 14px; }
