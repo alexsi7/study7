@@ -1,4 +1,4 @@
-.team-acco {
+	.team-acco {
 	@include tablets {
 		padding-bottom: rem(20px);
 	}
@@ -15,7 +15,7 @@
 		margin-bottom: 0;
 	}
 
-	&.active {
+	&:active {
 		.team-acco__trigger {
 			color: $yellow;
 
@@ -124,3 +124,5 @@
 	color: #fff;
 	font-size: rem(14px);
 }
+
+
