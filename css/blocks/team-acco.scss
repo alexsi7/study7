@@ -71,20 +71,26 @@
 		}
 	}
 }
-
 .team-acco__content {
 	@extend %clearfix;
 	padding-top: rem(14px);
-	display: none;
+	display:none;
+
+	&-active {
+		display: flex;
+	}
 
 	@include tablets {
 		padding: 0 25%;
 	}
 }
 
+
+
 .team-acco__pic {
 	text-align: center;
 	width: 30%;
+	background: url("../img/team/aphex.png") no-repeat; 
 
 	@include tablets {
 		margin-bottom: rem(15px);
@@ -92,6 +98,7 @@
 }
 
 .team-acco__img {
+
 	@include inlineblock();
 	width: rem(100px);
 	height: rem(100px);

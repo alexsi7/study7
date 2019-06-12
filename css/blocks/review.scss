@@ -1,14 +1,15 @@
 .review {
   position: relative;
   filter: grayscale(100%);
-
+  
   &:hover {
     .review__hover{
       opacity: 1;
     }
-    
   }
 }
+
+
 
 .review__avatar {
   object-fit: cover;

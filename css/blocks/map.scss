@@ -1,6 +1,6 @@
 .map {
 	position: relative;
-  background: url('/img/bg-map.png') center center / cover no-repeat;
+  background: url('../img/bg-map.png') center center / cover no-repeat;
   
 }
 
@@ -22,12 +22,12 @@
 	flex-wrap: wrap-reverse;
 	justify-content: space-between;
 	align-items: center;
-	align-content: center;
+  align-content: center;
 }
 
 .footer__address {
-  font-size: 14px;
-  color: #fff;
+  color: #ffffff;
+	font-size: rem(14px);
 }
 
 .footer__phone {
