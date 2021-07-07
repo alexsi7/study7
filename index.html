@@ -12,47 +12,49 @@
     <section class="section hero">
       <div class="container hero__container">
         <header class="header">
-          <img src="./img/logo.png" alt="mr burgers logo" class="logo">
+          <img src="./img/logo.png" alt="mr burgers logo" class="header__logo">
           <div class="header__buttons">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="#">О НАС</a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">О НАС</a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">БУРГЕРЫ</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">БУРГЕРЫ</a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">КОМАНДА</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">КОМАНДА</a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">МЕНЮ</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">МЕНЮ</a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">ОТЗЫВЫ</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">ОТЗЫВЫ</a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">КАК МЫ РАБОТАЕМ</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">КАК МЫ РАБОТАЕМ</a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">КОНТАКТЫ</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">КОНТАКТЫ</a>
                 </li>
               </ul>
             </nav>
             <a href="" class="btn header__order-btn">ЗАКАЗАТЬ</a>
           </div>
         </header>
-        <div class="hero__content">
-          <div class="hero__content-image">
-            <img src="./img/drops.png" alt="burger">
-          </div>
-          <div class="hero__content-text">
-            <h1 class="section-title">МЫ ДЕЛАЕМ</h1>
-            <div class="hero__desc">
-              натуральные бургеры
+        <div class="hero__container">
+          <div class="hero__content">
+            <div class="hero__left">
+              <img class="hero__img" src="./img/drops.png" alt="burger">
             </div>
-          </div>
-        </div> 
+            <div class="hero__right">
+              <h1 class="section-title">МЫ ДЕЛАЕМ</h1>
+              <div class="hero__desc">
+                натуральные бургеры
+              </div>
+            </div>
+          </div> 
+        </div>
         <a href="" class="down-arrow">
           <svg class="down-arrow__icon">
            <use xlink:href="./img/sprite.svg#arrow-scroll"></use>
@@ -70,11 +72,9 @@
             </div>
             <div class="feature__desc">
               <h3>100% свежее мясо</h3>
-              <div class="feature__text">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maxime nam, ullam explicabo quis magni incidunt enim pariatur recusandae assumenda.
-                </p>
-              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maxime nam, ullam explicabo quis magni incidunt enim pariatur recusandae assumenda.
+              </p>
             </div>
           </li>
           <li class="best__item feature">
@@ -83,11 +83,9 @@
               </div>
               <div class="feature__desc">
                 <h3>Ручная сборка</h3>
-                <div class="feature__text">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maxime nam, ullam explicabo quis magni incidunt enim pariatur recusandae assumenda.
-                  </p>
-                </div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maxime nam, ullam explicabo quis magni incidunt enim pariatur recusandae assumenda.
+                </p>
               </div>
           </li>
           <li class="best__item feature">
@@ -96,11 +94,9 @@
               </div>
               <div class="feature__desc">
                 <h3>Натуральные ингредиенты</h3>
-                <div class="feature__text">
-                  <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus quia ullam debitis fuga sint.
-                  </p>
-                </div>
+                <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus quia ullam debitis fuga sint.
+                </p>
               </div>
           </li>
         </ul>
@@ -108,12 +104,12 @@
     </section>
     <section class="section team">
       <div class="team__section">
-        <div class="section__title">Команда</div>
+        <div class="section-title">Команда</div>
         <ul class="team-acco">
           <li class="team-acco__item"><a class="team-acco__trigger" href="#">дэниэл редклифф</a>
             <div class="team-acco__content">
               <div class="team-acco__pic">
-                <div class="team-acco__img" style="background-image: url('./img/content/teammate.jpg')"></div>
+                <div class="team-acco__img"></div>
               </div>
               <div class="team-acco__text">
                 <div class="team-acco__title">Шеф-повар</div>
@@ -122,7 +118,7 @@
             </div>
           </li>
           <li class="team-acco__item"><a class="team-acco__trigger" href="#">ричард джеймс</a>
-            <div class="team-acco__content">
+            <div class="team-acco__content team-acco__content-active">
               <div class="team-acco__pic">
                 <div class="team-acco__img" style="background-image: url('./img/content/teammate.jpg')"></div>
               </div>
@@ -158,32 +154,31 @@
       </div>
     </section>
     <section class="section menu">
-      <div class="section__title section__title_white menu__title">Меню</div>
+      <div class="section-title section-title--color-white menu__title">Меню</div>
       <ul class="menu-acco">
-        <li class="menu-acco__item"><a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/meats.jpg')">
-            <div class="menu-acco__trigger-text">Для мясоедов</div></a>
+        <li class="menu-acco__item">
+          <a class="menu-acco__trigger menu-acco__trigger-left" href="#">
+            <div class="menu-acco__trigger-text">Для мясоедов</div>
+          </a>
           <div class="menu-acco__content">
-            <div class="menu-acco__text">
-              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+            <div class="menu-acco__text menu-acco__text-active">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, porro natus corporis reiciendis optio veniam repellendus? Aspernatur officia, recusandae vel inventore, natus nisi dicta iste dignissimos suscipit magnam dolorem. Ratione quia distinctio veniam accusantium eos molestiae quisquam laudantium modi tenetur deserunt, quas inventore magni sed rem dolore vero dolorem ipsum? Voluptatem, eveniet doloremque adipisci, laboriosam earum, quia omnis hic cupiditate voluptate commodi aliquam dolorem at possimus facere cumque! Fugit veniam provident, molestiae facilis harum voluptate voluptas magni eaque commodi, veritatis odio hic molestias aliquam rem iure at ad accusamus in. Unde sequi dolore aliquam distinctio at eveniet eligendi suscipit consectetur?
             </div>
           </div>
         </li>
-        <li class="menu-acco__item"><a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/vegans.jpg')">
+        <li class="menu-acco__item"><a class="menu-acco__trigger menu-acco__trigger-center" href="#">
             <div class="menu-acco__trigger-text">Вегетарианское</div></a>
           <div class="menu-acco__content">
             <div class="menu-acco__text">
-              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, porro natus corporis reiciendis optio veniam repellendus? Aspernatur officia, recusandae vel inventore, natus nisi dicta iste dignissimos suscipit magnam dolorem. Ratione quia distinctio veniam accusantium eos molestiae quisquam laudantium modi tenetur deserunt, quas inventore magni sed rem dolore vero dolorem ipsum? Voluptatem, eveniet doloremque adipisci, laboriosam earum, quia omnis hic cupiditate voluptate commodi aliquam dolorem at possimus facere cumque! Fugit veniam provident, molestiae facilis harum voluptate voluptas magni eaque commodi, veritatis odio hic molestias aliquam rem iure at ad accusamus in. Unde sequi dolore aliquam distinctio at eveniet eligendi suscipit consectetur?
             </div>
           </div>
         </li>
-        <li class="menu-acco__item"><a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/diets.jpg')">
+        <li class="menu-acco__item"><a class="menu-acco__trigger menu-acco__trigger-right" href="#">
             <div class="menu-acco__trigger-text">Диетическое</div></a>
           <div class="menu-acco__content">
             <div class="menu-acco__text">
-              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-              Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, porro natus corporis reiciendis optio veniam repellendus? Aspernatur officia, recusandae vel inventore, natus nisi dicta iste dignissimos suscipit magnam dolorem. Ratione quia distinctio veniam accusantium eos molestiae quisquam laudantium modi tenetur deserunt, quas inventore magni sed rem dolore vero dolorem ipsum? Voluptatem, eveniet doloremque adipisci, laboriosam earum, quia omnis hic cupiditate voluptate commodi aliquam dolorem at possimus facere cumque! Fugit veniam provident, molestiae facilis harum voluptate voluptas magni eaque commodi, veritatis odio hic molestias aliquam rem iure at ad accusamus in. Unde sequi dolore aliquam distinctio at eveniet eligendi suscipit consectetur?
             </div>
           </div>
         </li>
@@ -289,9 +284,122 @@
         </li>
       </ul>
     </section>
+    <section class="section order">
+        <div class="container">
+          <div class="section-title section-title-order">Закажите доставку</div>
+          <div class="order__form">
+            <form class="order__form-tag" id="order-form">
+              <div class="order__form-col">
+                <div class="order__form-row order__form-row_double">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Имя</div>
+                    <input class="order__form-input" name="name" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Телефон</div>
+                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+                  </label>
+                </div>
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Улица</div>
+                    <input class="order__form-input" name="street" type="text" placeholder="">
+                  </label>
+                </div>
+                <div class="order__form-row order__form-row_quatro">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Дом</div>
+                    <input class="order__form-input" name="home" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Корпус</div>
+                    <input class="order__form-input" name="part" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Квартира</div>
+                    <input class="order__form-input" name="appt" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Этаж</div>
+                    <input class="order__form-input" name="floor" type="text" placeholder="">
+                  </label>
+                </div>
+              </div>
+              <div class="order__form-col">
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Комментарий</div>
+                    <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+                  </label>
+                </div>
+                <div class="order__form-buttons">
+                  <div class="order__form-row">
+                    <label class="order__radio">
+                      <input class="order__radio-elem" name="payment" type="radio">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Потребуется сдача</div>
+                    </label>
+                    <label class="order__radio">
+                      <input class="order__radio-elem" name="payment" type="radio">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Оплата по карте</div>
+                    </label>
+                  </div>
+                  <div class="order__form-row">
+                    <label class="order__radio order__radio_checkbox">
+                      <input class="order__radio-elem" name="callback" type="checkbox">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Не перезванивать</div>
+                    </label>
+                  </div>
+                  <div class="order__form-row">
+                    <input class="order__form-button" name="" type="submit" value="Заказать">
+                    <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </section>
+    <section class="section map">
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__col-left">
+            <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div><a class="footer__phone"  href="tel:+78123771377"> <svg class="phone__icon">
+              <use xlink:href="./img/sprite.svg#phone"></use>
+             </svg> +7 (812) 377-13-77</a>
+          </div>
+          <div class="footer__col-right">
+            <ul class="socials">
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="./img/sprite.svg#fb"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="./img/sprite.svg#inst"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="#">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="./img/sprite.svg#twitter"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
   </div>
-</body>
-</html>
+  </body>
+  </html>
+                
+            
+      
+          
            
           
       
@@ -299,5 +407,9 @@
       
         
           
+                
+                
          
+                
+              
                 
